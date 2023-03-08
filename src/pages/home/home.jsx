@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, Navigate } from "react-router-dom";
 import { countryStates } from "../data/countryState";
 import { departmentData } from "../data/departement";
@@ -14,12 +14,24 @@ function Home() {
   const [street, setStreet] = useState("");
   const [city, setCity] = useState("");
   const [stateCountry, setState] = useState("");
+  const [stateCountryAbb, setStateAbb] = useState("");
+
   const [zipCode, setZipCode] = useState("");
   const [department, setDepartment] = useState("");
 
   const [modal, setModal] = useState(false)
 
+  function matchState(stateName) {
+ const stateAbbr = countryStates.find(stateName => stateName.name === stateCountry )
+ if(typeof stateAbbr !== "undefined"){
+    setStateAbb(stateAbbr.abbreviation)
+ }
 
+  }
+
+  useEffect(() => {
+    matchState(stateCountry)
+  }, [stateCountry])
 
   console.log(modal)
 
@@ -37,7 +49,7 @@ function Home() {
       startDate,
       street,
       city,
-      stateCountry,
+      stateCountryAbb,
       zipCode,
       department
     };

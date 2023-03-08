@@ -17,10 +17,10 @@ function Table() {
       { Header: "Last Name", accessor: "lastName" },
       { Header: "Start Date", accessor: "startDate" },
       { Header: "Department", accessor: "department" },
-      { Header: "Date of Birth", accessor: "dateOfBirth" },
+      { Header: "Date of Birth", accessor: "birthDate" },
       { Header: "Street", accessor: "street" },
       { Header: "City", accessor: "city" },
-      { Header: "State", accessor: "state" },
+      { Header: "State", accessor: "stateCountryAbb" },
       { Header: "Zip Code", accessor: "zipCode" },
     ],
     []
@@ -49,11 +49,6 @@ function Table() {
     useSortBy,
     usePagination
   );
-
-  useEffect(() => {
-
-    localStorage.setItem("employees", JSON.stringify(data));
-  }, [data]);
 
   return (
     <>        <select
