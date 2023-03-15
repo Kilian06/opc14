@@ -8,6 +8,8 @@
     margin: 0 Auto;
     text-align: center;
     background-color: #042033;
+    max-width: 1100px;
+
   }
   
   h1 {
@@ -87,7 +89,7 @@
   
   table{
       padding-top: 20px;
-      width: 95%;
+      width: 100%;
       min-width: 700px;
       margin: auto;
       thead{
@@ -108,3 +110,10 @@
       justify-content: space-around;
   }
   
+  .tableHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+
+}

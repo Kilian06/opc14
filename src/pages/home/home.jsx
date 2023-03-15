@@ -62,7 +62,7 @@ function Home() {
 
   return (
     <>
-      <h1>HRnet</h1>
+      <h1>HRnet - Local Storage</h1>
       <Link to="/employee-list">View Current Employee</Link>
       <h2>Create Employee</h2>
       <form onSubmit={handleSubmit}>

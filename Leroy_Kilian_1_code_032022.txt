@@ -1,0 +1,16 @@
+
+VERSION LOCAL STORAGE :
+
+
+Lien vers la page Vercel : https://opc14.vercel.app/
+Lien vers le repo GitHub du projet : https://github.com/Kilian06/opc14
+
+
+
+VERSION REDUX :
+
+Lien vers la page Vercel : https://projet-14-opc.vercel.app/
+Lien vers le repo GitHub du projet : https://github.com/Kilian06/Projet-14-OPC
+
+
+Lien vers le package NPM de la modal : https://www.npmjs.com/package/modal-component-kle?activeTab=readme
